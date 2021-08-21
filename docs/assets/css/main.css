@@ -1,4 +1,11 @@
 @import url("https://fonts.googleapis.com/css?family=Arvo:700|Open+Sans");
+
+:root {
+  --main-fg-color: #abacae; /*Colore principale del testo - forse 7b7c7e è meglio*/
+  --avatar-subtitle-color: #333333; /* Colore dei sottotitoli per gli avatar del team e testimonial*/
+  --main-text-font: 'Open Sans', sans-serif;
+}
+
 html {
   overflow-x: hidden;
 }
@@ -7,12 +14,13 @@ body {
   background: #fff;
   font-size: 14px;
   font-weight: 400;
-  font-family: 'Open Sans', sans-serif;
+  /* font-family: 'Open Sans', sans-serif; */
+  font-family: var(--main-text-font);
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   -webkit-font-smoothing: subpixel-antialiased;
-  color: #abacae;
+  color: var(--main-fg-color);
   line-height: 25px;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
@@ -43,7 +51,8 @@ a a:focus {
 
 p {
   font-weight: 400;
-  font-family: 'Open Sans', sans-serif;
+  /* font-family: 'Open Sans', sans-serif; */
+  font-family: var(--main-text-font);
   margin: 0px;
   font-size: 14px;
 }
@@ -866,7 +875,8 @@ hr {
 
 .team-item .info-text p {
   margin: 0;
-  color: #888;
+  /* color: #888; */
+  color: var(--avatar-subtitle-color);
 }
 
 .team-item:hover .team-overlay {
@@ -957,7 +967,7 @@ hr {
 
 #pricing .table .pricing-header .price-value span {
   font-size: 15px;
-  color: #abacae;
+  color: var(--main-fg-color);
   font-weight: 400;
 }
 
@@ -970,7 +980,7 @@ hr {
 #pricing .table .description li {
   font-size: 14px;
   font-weight: 400;
-  color: #abacae;
+  color: var(--main-fg-color);
   padding: 4px 0;
 }
 
@@ -1040,7 +1050,8 @@ hr {
 
 .testimonial-item .content .description {
   width: 100%;
-  color: #333;
+  /* color: #333; */
+  color: var(--main-fg-color);
 }
 
 .testimonial-item .content .star-icon i {
@@ -1066,10 +1077,13 @@ hr {
   font-weight: 500;
   line-height: 26px;
   margin-bottom: 10px;
+  /* font-family: 'Open Sans', sans-serif; */
+  font-family: var(--main-text-font);
 }
 
 .testimonial-item .info h3 a {
-  color: #333;
+  /* color: #333; */
+  color: var(--avatar-subtitle-color);
 }
 
 .testimonial-item .info .indicator {
@@ -1243,7 +1257,7 @@ textarea {
   margin: 30px 0px;
   padding: 3px 55px;
   position: relative;
-  color: #abacae;
+  color: var(--main-fg-color);
 }
 
 .contact-right .single-contact p {
@@ -1251,7 +1265,7 @@ textarea {
 }
 
 .contact-right .single-contact p a {
-  color: #abacae;
+  color: var(--main-fg-color);
 }
 
 .contact-right .contact-icon {
