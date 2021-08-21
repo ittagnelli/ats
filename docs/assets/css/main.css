@@ -85,7 +85,7 @@ a:not([href]):not([tabindex]) {
   margin: 0 auto 30px;
   position: relative;
   width: 60px;
-  background-color: #F63854;
+  background-color: #A80000;
 }
 
 .padding-none {
@@ -127,16 +127,16 @@ a:not([href]):not([tabindex]) {
 }
 
 .btn-common {
-  background-color: #F63854;
+  background-color: #A80000;
   position: relative;
   z-index: 1;
   text-transform: uppercase;
 }
 
 .btn-common:hover {
-  color: #F63854;
+  color: #A80000;
   background: transparent;
-  border: 1px dotted #F63854;
+  border: 1px dotted #A80000;
   box-shadow: 0 6px 22px rgba(0, 0, 0, 0.1);
   transition: all .2s ease-in-out;
   -moz-transition: all .2s ease-in-out;
@@ -144,23 +144,23 @@ a:not([href]):not([tabindex]) {
 }
 
 .btn-border {
-  color: #F63854;
+  color: #A80000;
   background-color: transparent;
-  border: 1px solid #F63854;
+  border: 1px solid #A80000;
   border-radius: 30px;
   text-transform: uppercase;
 }
 
 .btn-border:hover {
   color: #fff;
-  border-color: #F63854;
-  background-color: #F63854;
+  border-color: #A80000;
+  background-color: #A80000;
 }
 
 .btn-border:focus {
   color: #fff;
-  border-color: #F63854;
-  background-color: #F63854;
+  border-color: #A80000;
+  background-color: #A80000;
 }
 
 .btn-lg {
@@ -171,12 +171,12 @@ a:not([href]):not([tabindex]) {
 
 .btn-rm {
   padding: 7px 0px;
-  color: #F63854;
+  color: #A80000;
   text-transform: capitalize;
 }
 
 .btn-rm:hover {
-  color: #F63854;
+  color: #A80000;
 }
 
 button:focus {
@@ -184,7 +184,7 @@ button:focus {
 }
 
 .icon-close, .icon-check {
-  color: #F63854;
+  color: #A80000;
 }
 
 .social-icon a {
@@ -244,7 +244,7 @@ a.back-to-top i {
   height: 40px;
   line-height: 40px;
   color: #fff;
-  background: #F63854;
+  background: #A80000;
   border-radius: 30px;
   text-align: center;
   transition: all 0.2s ease-in-out;
@@ -287,7 +287,7 @@ a.back-to-top:hover, a.back-to-top:focus {
   height: 100%;
   border-radius: 100%;
   border: 7px solid transparent;
-  border-top-color: #F63854;
+  border-top-color: #A80000;
 }
 
 #loader-1:before {
@@ -375,7 +375,7 @@ hr {
 }
 
 #features .box-item .icon i {
-  color: #F63854;
+  color: #A80000;
   font-size: 30px;
   -webkit-transition: all 0.2s linear;
   -moz-transition: all 0.2s linear;
@@ -404,7 +404,7 @@ hr {
 }
 
 #features .box-item:hover h4 {
-  color: #F63854;
+  color: #A80000;
 }
 
 #features .show-box {
@@ -442,7 +442,7 @@ hr {
 
 .services-item .icon i {
   font-size: 30px;
-  color: #F63854;
+  color: #A80000;
   line-height: 70px;
   transition: all 0.3s ease-in-out 0s;
   -moz-transition: all 0.3s ease-in-out 0s;
@@ -463,7 +463,7 @@ hr {
 }
 
 .services-item .services-content h3 a:hover {
-  color: #F63854;
+  color: #A80000;
 }
 
 .services-item:hover {
@@ -471,7 +471,7 @@ hr {
 }
 
 .services-item:hover .icon {
-  background: #F63854;
+  background: #A80000;
 }
 
 .services-item:hover .icon i {
@@ -541,18 +541,18 @@ hr {
 
 .top-nav-collapse .navbar-nav .nav-link:hover {
   cursor: pointer;
-  color: #F63854 !important;
-  border-color: #F63854 !important;
+  color: #A80000 !important;
+  border-color: #A80000 !important;
 }
 
 .top-nav-collapse .navbar-nav .nav-link:hover {
-  color: #F63854 !important;
+  color: #A80000 !important;
 }
 
 .navbar-expand-md .navbar-toggler {
   background: transparent;
-  border: 1px solid #F63854;
-  color: #F63854;
+  border: 1px solid #A80000;
+  color: #A80000;
   border-radius: 4px;
   cursor: pointer;
 }
@@ -562,8 +562,8 @@ hr {
 }
 
 .top-nav-collapse .navbar-nav li.active a.nav-link {
-  color: #F63854 !important;
-  border-color: #F63854;
+  color: #A80000 !important;
+  border-color: #A80000;
 }
 
 .indigo {
@@ -600,7 +600,7 @@ hr {
 }
 
 .navbar-expand-md .navbar-nav .nav-link:before {
-  background-color: #F63854;
+  background-color: #A80000;
   content: '';
   display: block;
   height: 2px;
@@ -627,14 +627,14 @@ hr {
 .navbar-expand-md .navbar-nav .nav-link.active,
 .navbar-expand-md .navbar-nav .nav-link.open,
 .navbar-expand-md .navbar-nav .open > .nav-link {
-  color: #F63854 !important;
+  color: #A80000 !important;
   width: 100%;
 }
 
 .navbar-expand-md .navbar-nav .nav-link:hover,
 .navbar-expand-md .navbar-nav .nav-link:hover::before,
 .navbar-expand-md .navbar-nav .nav-link:focus {
-  color: #F63854;
+  color: #A80000;
   width: 100%;
   transition: width 1s;
   -webkit-transition: width 1s;
@@ -730,7 +730,7 @@ hr {
 .dropdown .dropdown-item:focus,
 .dropdown .dropdown-item:hover,
 .dropdown .dropdown-item.active {
-  color: #F63854;
+  color: #A80000;
   background: #f7f7f7;
 }
 
@@ -747,7 +747,8 @@ hr {
 3. Hero Area
 ========================================================================== */
 #hero-area {
-  background-image: url(../img/hero-area.svg);
+  //background-image: url(../img/hero-area.svg);
+  background-image: url(../img/hero-areared.svg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -860,7 +861,7 @@ hr {
 }
 
 .team-item .info-text h3 a:hover {
-  color: #F63854;
+  color: #A80000;
 }
 
 .team-item .info-text p {
@@ -925,7 +926,7 @@ hr {
 }
 
 #pricing .table .icon-box i {
-  color: #F63854;
+  color: #A80000;
   line-height: 80px;
   font-size: 30px;
   -webkit-transition: all .3s linear;
@@ -942,7 +943,7 @@ hr {
 
 #pricing .table .pricing-header .price-value {
   font-size: 24px;
-  color: #F63854;
+  color: #A80000;
   position: relative;
   text-align: center;
   font-weight: 700;
@@ -983,7 +984,7 @@ hr {
 }
 
 #pricing .table:hover .icon-box {
-  background: #F63854;
+  background: #A80000;
 }
 
 #pricing .table:hover .icon-box i {
@@ -996,7 +997,7 @@ hr {
 }
 
 #pricing #active-tb .icon-box {
-  background: #F63854;
+  background: #A80000;
 }
 
 #pricing #active-tb .icon-box i {
@@ -1009,7 +1010,9 @@ hr {
 
 .testimonial {
   position: relative;
-  background-color: #F63854;
+  /* background-color: #A80000; tutte le istanze di A80000 sono in originale F63854 */
+  background-color: #a80000;
+  
 }
 
 .testimonial-item {
@@ -1041,7 +1044,7 @@ hr {
 }
 
 .testimonial-item .content .star-icon i {
-  color: #F63854;
+  color: #A80000;
 }
 
 .testimonial-item .info h2 {
@@ -1072,7 +1075,7 @@ hr {
 .testimonial-item .info .indicator {
   font-size: 26px;
   font-weight: 700;
-  color: #F63854;
+  color: #A80000;
 }
 
 .testimonial-item .icon-social {
@@ -1157,7 +1160,7 @@ hr {
 }
 
 .owl-carousel button.owl-dot.active span, .owl-carousel button.owl-dot.clickable, .owl-carousel button.owl-dot:hover span {
-  background: #F63854;
+  background: #A80000;
 }
 
 .slick-slider {
@@ -1197,7 +1200,7 @@ hr {
 }
 
 .form-control:focus {
-  border-color: #F63854;
+  border-color: #A80000;
   box-shadow: none;
   outline: none;
 }
@@ -1252,7 +1255,7 @@ textarea {
 }
 
 .contact-right .contact-icon {
-  background: #F63854;
+  background: #A80000;
   color: #fff;
   border-radius: 4px;
   font-size: 20px;
@@ -1312,7 +1315,7 @@ textarea {
 }
 
 .footer-area .footer-link li a:hover {
-  color: #F63854;
+  color: #A80000;
 }
 
 .footer-area .address li {
@@ -1354,7 +1357,7 @@ textarea {
   height: 52px;
   border-radius: 0;
   background: transparent;
-  color: #F63854;
+  color: #A80000;
 }
 
 #copyright .copyright-content {
@@ -1371,7 +1374,7 @@ textarea {
 }
 
 #copyright p a {
-  color: #F63854;
+  color: #A80000;
 }
 
 .social-icon a {
