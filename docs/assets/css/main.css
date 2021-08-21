@@ -12,7 +12,8 @@ html {
 
 body {
   background: #fff;
-  font-size: 14px;
+  /* font-size: 14px; */
+  font-size: 16px;
   font-weight: 400;
   /* font-family: 'Open Sans', sans-serif; */
   font-family: var(--main-text-font);
@@ -54,7 +55,8 @@ p {
   /* font-family: 'Open Sans', sans-serif; */
   font-family: var(--main-text-font);
   margin: 0px;
-  font-size: 14px;
+  /* font-size: 14px; */
+  font-size: 16px;
 }
 
 ul, ol {
