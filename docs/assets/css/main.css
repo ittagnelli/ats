@@ -73,6 +73,10 @@ a:not([href]):not([tabindex]) {
   color: #fff;
 }
 
+.hide{
+  visibility: hidden;
+}
+
 .section-header {
   margin-bottom: 30px;
 }
