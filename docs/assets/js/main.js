@@ -9,13 +9,13 @@
   $('#preloader').fadeOut();
 
   // Sticky Nav
-    $(window).on('scroll', function() {
-        if ($(window).scrollTop() > 50) {
-            $('.scrolling-navbar').addClass('top-nav-collapse');
-        } else {
-            $('.scrolling-navbar').removeClass('top-nav-collapse');
-        }
-    });
+    // $(window).on('scroll', function() {
+    //     if ($(window).scrollTop() > 50) {
+    //         $('.scrolling-navbar').addClass('top-nav-collapse');
+    //     } else {
+    //         $('.scrolling-navbar').removeClass('top-nav-collapse');
+    //     }
+    // });
 
     // one page navigation 
     $('.navbar-nav').onePageNav({
