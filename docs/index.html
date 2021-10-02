@@ -622,7 +622,7 @@
                       <div class="help-block with-errors"></div>
                     </div>
                     <div class="submit-button text-left">
-                      <button class="btn btn-common" id="form-submit" type="submit">Invia Richiesta</button>
+                      <button class="btn btn-common" id="form-submit" type="submit" onclick="sendEmail()">Invia Richiesta</button>
                       <div id="msgSubmit" class="h3 text-center hidden"></div> 
                       <div class="clearfix"></div> 
                     </div>
@@ -735,6 +735,6 @@
     <script src="assets/js/main.js"></script>
     <script src="assets/js/form-validator.min.js"></script>
     <script src="assets/js/contact-form-script.min.js"></script>
-      
+    <script src="https://smtpjs.com/v3/smtp.js"></script>  
   </body>
 </html>
