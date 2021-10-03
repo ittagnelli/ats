@@ -74,7 +74,8 @@ a:not([href]):not([tabindex]) {
 }
 
 .hide{
-  visibility: hidden;
+  /* visibility: hidden; */
+  display: none;
 }
 
 .section-header {
