@@ -74,7 +74,8 @@ a:not([href]):not([tabindex]) {
 }
 
 .hide{
-  visibility: hidden;
+  /* visibility: hidden; */
+  display: none;
 }
 
 .section-header {
@@ -545,7 +546,7 @@ hr {
 }
 
 .top-nav-collapse .navbar-brand img {
-  width: 70%;
+  width: 50%;
 }
 
 .top-nav-collapse .navbar-nav .nav-link {
@@ -573,7 +574,7 @@ hr {
 }
 
 .navbar-brand img {
-  width: 70%;
+  width: 50%;
 }
 
 .top-nav-collapse .navbar-nav li.active a.nav-link {
