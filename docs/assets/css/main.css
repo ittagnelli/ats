@@ -74,7 +74,7 @@ a:not([href]):not([tabindex]) {
 }
 
 .hide{
-  /* 1.2isibility: hidden; */
+  /*visibility: hidden;*/
   display: none;
 }
 
