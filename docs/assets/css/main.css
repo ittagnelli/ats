@@ -1304,7 +1304,8 @@ textarea {
 .footer-area {
   position: relative;
   padding: 150px 0px 0px;
-  background: #fff;
+  /* background: #fff; */
+  background: #f9f9f9;
 }
 
 .footer-area .footer-titel {
@@ -1380,6 +1381,10 @@ textarea {
   background: transparent;
   color: #A80000;
 }
+
+/* .footer-logo {
+  width: 80%;
+} */
 
 #copyright .copyright-content {
   border-top: 1px solid #d5d4e9;
