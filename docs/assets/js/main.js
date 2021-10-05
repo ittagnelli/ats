@@ -15,7 +15,7 @@
         } else {
             $('.scrolling-navbar').removeClass('top-nav-collapse');
         }
-    });
+  });
 
     // one page navigation 
     $('.navbar-nav').onePageNav({
