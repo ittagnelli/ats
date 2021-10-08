@@ -4,6 +4,16 @@
 
   $(window).on('load', function() {
 
+    
+    /*Seleziona e visualizza i 4 avatar di ATS team
+    ========================================================*/
+    get_4_students().forEach((studente, indice) => {
+      $("#avatar-img" + indice).attr("src", avatardb[studente].img);
+      $("#avatar-nome" + indice).html(avatardb[studente].nome);
+      $("#avatar-ruolo" + indice).html(avatardb[studente].ruolo);
+      $("#avatar-desc" + indice).html(avatardb[studente].desc); 
+    });
+
   /*Page Loader active
   ========================================================*/
   $('#preloader').fadeOut();
