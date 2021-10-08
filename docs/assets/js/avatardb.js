@@ -1,4 +1,4 @@
-var MAX_STUDENTS = 9;
+var MAX_STUDENTS = 15;
 
 function get_4_students() {
     student = new Set();
@@ -23,10 +23,28 @@ var avatardb = [
         desc: "Non sai nulla? Anch'io ero come te, adesso se ti serve una mano basta chiedere."
     },
     {
+        img: "assets/img/team/avatar-chindris.png",
+        nome: "ALEXANDRU CHINDRIS",
+        ruolo: "Software Assistant",
+        desc: "Appassionato di programmazione, hardwere troubleshooting e grafica.Saprà certamente aiutarti!!"
+    },
+    {
         img: "assets/img/team/avatar-garabello.png",
         nome: "MARCO GARABELLO",
         ruolo: "Software Assistant",
         desc: "Sempre disponibile per aiutare o chiarire qualunque dubbio nel mondo del software."
+    },
+    {
+        img: "assets/img/team/avatar-laudani.png",
+        nome: "SIMONE LAUDANI",
+        ruolo: "Software Assistant",
+        desc: "Motivato e sempre a disposizione. Mi piace vedere il lato positivo delle cose."
+    },
+    {
+        img: "assets/img/team/avatar-lurgo.png",
+        nome: "GIACOMO LURGO",
+        ruolo: "Hardware Assistant",
+        desc: "Abile smanettone, capace e affidabile."
     },
     {
         img: "assets/img/team/avatar-pomba.png",
@@ -51,6 +69,24 @@ var avatardb = [
         nome: "CHRISTIAN SCIANNIMANICA",
         ruolo: "Customer Support",
         desc: "Hai un problema col computer? Christian saprà aiutarti a trovare la soluzione"
+    },
+    {
+        img: "assets/img/team/avatar-siracusa.png",
+        nome: "MICHELE SIRACUSA",
+        ruolo: "Hardware Assistant",
+        desc: "Ci mette passione nel trovare la soluzione!"
+    },
+    {
+        img: "assets/img/team/avatar-sola.png",
+        nome: "MATTEO SOLA",
+        ruolo: "Hardware Assistant",
+        desc: "Parla poco ma agisce molto. Vieni a conoscerlo, non te ne pentirai!"
+    },
+    {
+        img: "assets/img/team/avatar-solavagione.png",
+        nome: "MATTEO SOLAVAGIONE",
+        ruolo: "Software Assistant",
+        desc: "Riflessivo e sempre pronto a trovare una soluzione al tuo problema."
     },
     {
         img: "assets/img/team/avatar-viteritti.png",
