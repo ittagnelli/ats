@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "ats-agnelli",
+  "private_key_id": "a742ef2e58ff530d4e8526c3f5a2a67f368fa2eb",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQCl33uCOjc2xmmw\naN+dzq01OyYx0ro5Qc5luRznZeEzln+BNfIMOxwj5d4LDhm28lt3lkfCuT23UxKE\nZ02BA5/akwjYJHUCZRjtugsDR4guaMiIcRfRPOIRUq3mWPLatm22DMBoZsln1WYY\nRQ6LpJoQeskfNfdGsnhpVk48nBQsTs+/GI4USd1HI05e8V6Tt03tCXTtuZOlg1v7\n5Fon4nBom3Cuo04KYg3QjXidhKE8PBUtqH8/RAGEpD1HknqC3AwwsYDCVMcjHpuK\nJuR5PGg/WYdE6r6i9xNgeYa2fw0nOEtNOwHU4HuPQ8JS6VJ/GCraaARB2GH9z7aR\nrIiyvb8vAgMBAAECggEAOsomwFVZ1HQmaXwCJbBm+4LnWqlRj5GfUbZ2ZB1b4Cjr\nMCSqkWMx6hdCx7BLtOfZO11sObvl/9/VpE/ozF04fwO2EsV5I0wptbhGxvbHcYt5\n58INqv9lMLaZJBdKm/IkmG2UlGw53i9obBmtuhiw8j5SollCNzByNQN930WCcOE7\nqPVCjtXuvtCcmvyC1iy+XYggs62RQcvFT8F5C9SziNrq1/TNC3kM3p8KMdNkQENN\nbxf8qAW2DmhkkkWWYxSvA6DDRDHpp2UUQpdSeEKOyIgX4S71MzPph4cdk0usLZOb\n7uu+0DejlpEnl4uX3JFan7LblRzZ0ZNAbghUS7+9oQKBgQDbtjK+KvbclYHg3vgv\nEMD9LZcogeWL/DcngFDTLquOE2kBrirDzS7q8K8yycFAnN7lCXN6kPQ1qOjh6WZA\nckihaTAMxQNu7jrb77x5lcc3O32jMOQOkkpXpS1L+aTZr55IIX52DdFWvZcbSrR1\n+eSIRRemDFwYtT2A6ExTskTfPQKBgQDBROMKR061hWux4TZEVYP0JRQQmbIHwapK\nqZ03kAJMS5qFXX5ZICs9xRDUNhlGkn8Gw3g0xvkaU+yFysYTQ0iVDZpUPOtEnlqx\nXhF8qMUKGSoMch2hL00mSmPCLvlUpjOWQPHekbCKRxuiTqmxRXxiQIXOfjhzn0Yk\nMJ6Pruo+2wKBgBOTPRwiWdI3Y9X0J6qR1I/6EuCiCiCZvRRA43KdUt2arx1eNiMx\n0b9O6F0fCp/GGjnPyMEfzxJE1VLjZ5/QTtZKt+Q7XV3xzb6wslsm1BQAseXrQjZm\nJEeAyPNe76gRdIm6qji8bG1NAPyGgGOOeyUE+uFpcn8lDrDAgaRnWqmFAoGAfw7X\nqDE66JE/POEPeRszNbWOnF8+sGS8nHsntZiCOkBV5KmTX+qLIv/EUY8DTOcQhZTK\nGQBaUdmsnESztYQ9Wmhn9ktabHEitIpgOrEFYN8sSqRXIFllge/T55xUJDdjoLsv\nh6AGDNI0s569ZqKE5F8A2MEYQcMLLM2d4F4g95MCgYBjEbvfVXMMMtMo+fXZUvim\n8GR1KhmDtEyq2jRlKfJo1bYNhwSnNL33WDB+LcUEEzVkr1pYNMwDQ4rqjaE80ie0\nJydsDkZNRv7ExbUpyvEfD8cx3pJBpavPhqPS6tHzviMs++OXSjYL+Dkz8NLMOTh8\nO+QftsEatNyzy+Forwsvrw==\n-----END PRIVATE KEY-----\n",
+  "client_email": "firebase-adminsdk-nw3ce@ats-agnelli.iam.gserviceaccount.com",
+  "client_id": "109791513878757520523",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-nw3ce%40ats-agnelli.iam.gserviceaccount.com"
+}
