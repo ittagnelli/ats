@@ -26,7 +26,7 @@ var avatardb = [
         img: "assets/img/team/avatar-chindris.png",
         nome: "ALEXANDRU CHINDRIS",
         ruolo: "Software Assistant",
-        desc: "Appassionato di programmazione, hardwere troubleshooting e grafica.Saprà certamente aiutarti!!"
+        desc: "Appassionato di programmazione, hardware troubleshooting e grafica.Saprà certamente aiutarti!!"
     },
     {
         img: "assets/img/team/avatar-garabello.png",
