@@ -117,6 +117,12 @@
 		  </div>
 		</div>
 	  </div>
+	  <div class="row">
+		<div class="col-md-12 col-lg-12 col-xs-12 ats_price">
+			<br />
+			I servizi offerti da ATS hanno un costo minimo di 5 Euro. Il prezzo finale sarà stabilito insieme ai nostri tecnici al momento del preventivo.
+		</div>
+	  </div>
 	</div>
   </section>
   <!-- Services Section End -->

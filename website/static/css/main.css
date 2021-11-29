@@ -1449,3 +1449,7 @@ textarea {
   text-align: justify; 
   text-justify: inter-word;
 }
+
+.ats_price {
+  text-align: center;
+}
