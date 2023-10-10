@@ -1,4 +1,4 @@
-var MAX_STUDENTS = 10;
+var MAX_STUDENTS = 11;
 
 function get_4_students() {
 	student = new Set();
@@ -47,7 +47,7 @@ var avatardb = [
 		desc: 'Il computer? Lo conosco come le mie tasche!'
 	},
 	{
-		img: 'img/team/avatar-mari.jpeg',
+		img: 'img/team/avatar-mari.jpg',
 		nome: 'Gioele Mari',
 		ruolo: 'Hardware Assistant',
 		desc: 'Il computer? Lo conosco come le mie tasche!'
@@ -65,19 +65,19 @@ var avatardb = [
 		desc: 'Matteo è come te, pieno di domande. Ora però sarà pronto a darti una risposta!'
 	},
 	{
-		img: 'img/team/avatar-peluso.jpeg',
+		img: 'img/team/avatar-peluso.jpg',
 		nome: 'Sebastiano Peluso',
 		ruolo: 'Customer Support',
 		desc: 'Hai un problema col computer? Sebastiano saprà aiutarti a trovare la soluzione'
 	},
-
-	/*
 	{
-		img: 'img/team/avatar-siracusa.png',
-		nome: 'MICHELE SIRACUSA',
+		img: 'img/team/avatar-widson.jpeg',
+		nome: 'Okoro Wisdom',
 		ruolo: 'Hardware Assistant',
 		desc: 'Ci mette passione nel trovare la soluzione!'
 	},
+
+	/*
 	{
 		img: 'img/team/avatar-sola.png',
 		nome: 'MATTEO SOLA',
