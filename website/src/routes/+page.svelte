@@ -1,5 +1,73 @@
 <script context="module">
+	import { log_access } from "$lib/js/firebase";
+
 	export const prerender = true;
+
+	let name, email, msg_subject, msg_service, message;
+
+	function sendEmail(){
+
+    console.log(name);
+    console.log(email);
+    console.log(msg_subject);
+    console.log(msg_service);
+    console.log(message);
+   
+    const email_body = `
+        <table border="1">
+        <tr>
+            <td><h2>Richiesta da:</h2></td>
+            <td><h2>#nome</h2></td>
+        </tr>
+        <tr>
+            <td><h2>Email:</h2></td>
+            <td><h2>#email</h2></td>
+        </tr>
+        <tr>
+            <td><h2>Servizio:</h2></td>
+            <td><h2>#servizio</h2></td>
+        </tr>
+        <tr>
+            <td><h2>Oggetto:</h2></td>
+            <td><h2>#oggetto</h2></td>
+        </tr>
+        <tr>
+            <td><h2>Richiesta:</h2></td>
+            <td><h2><pre>#richiesta</pre></h2></td>
+        </tr>
+    </table>`
+    .replace("#nome", name)
+    .replace("#email", email)
+    .replace("#servizio", msg_service)
+    .replace("#oggetto", msg_subject)
+    .replace("#richiesta", message);
+    
+    console.log(email_body);
+    if(message == '' || name == '' || email == '' || msg_subject == '' || msg_service == null){
+        alert("Per favore compilare tutti i campi per proceedre con l'invio!!!");
+        console.log("Errore: non tutti i campi sono stati compilati");
+    }
+    else{
+        Email.send({
+            SecureToken : '0dbd587a-5b00-4cca-b1ef-8d25e73fda99',
+            To : 'ats@istitutoagnelli.it',
+            From : 'ats@istitutoagnelli.it',
+            Subject : msg_subject,
+            Body : email_body
+        }).then(
+            (_) => {
+                log_access("email");
+                alert("Messaggio inviato con successo! Grazie");
+                console.log("Messaggio inviato con successo!");
+				name = "";
+				email = "";
+				msg_subject = "";
+				msg_service = "";
+				message = "";
+            }   
+        ); 
+    }
+}
 </script>
 
 <svelte:head>
@@ -572,7 +640,7 @@
 					<div class="help-block with-errors"></div>
 				  </div>
 				  <div class="submit-button text-left">
-					<button class="btn btn-common" id="form-submit" type="submit" onclick="sendEmail()">Invia Richiesta</button>
+					<button class="btn btn-common" id="form-submit" type="submit" on:click={sendEmail}>Invia Richiesta</button>
 					<div id="msgSubmit" class="h3 text-center hidden"></div> 
 					<div class="clearfix"></div> 
 				  </div>
