@@ -247,14 +247,14 @@
 		  <!-- Team Item Starts -->
 		  <div class="team-item wow fadeInRight" data-wow-delay="0.2s">
 			<div class="team-img">
-			  <img id="avatar-img0" class="img-fluid" src="img/team/avatar-ruggieri.png" alt="" width="143">
+			  <img id="avatar-img0" class="img-fluid" src="img/team/avatar-cellini.jpeg" alt="" width="143">
 			</div>
 			<div class="contetn">
 			  <div class="info-text">
-				<h3 id="avatar-nome0"><a href="#">Dario Ruggieri</a></h3>
+				<h3 id="avatar-nome0"><a href="#">Marco Cellini</a></h3>
 				<p id="avatar-ruolo0">Software Assistant</p>
 			  </div>
-			  <p id="avatar-desc0">Dario è come te, pieno di domande. Ora però sarà pronto a darti una risposta!</p>
+			  <p id="avatar-desc0">Marco è come te, pieno di domande. Ora però sarà pronto a darti una risposta!</p>
 			  <ul class="social-icons">
 				<!-- <li><a href="#"><i class="lni-facebook-filled" aria-hidden="true"></i></a></li>
 				<li><a href="#"><i class="lni-twitter-filled" aria-hidden="true"></i></a></li> -->
@@ -268,11 +268,11 @@
 		  <!-- Team Item Starts -->
 		  <div class="team-item wow fadeInRight" data-wow-delay="0.4s">
 			<div class="team-img">
-			  <img id="avatar-img1" class="img-fluid" src="img/team/avatar-viteritti.png" alt="" width="143">
+			  <img id="avatar-img1" class="img-fluid" src="img/team/avatar-licciardino.jpg" alt="" width="143">
 			</div>
 			<div class="contetn">
 			  <div class="info-text">
-				<h3 id="avatar-nome1"><a href="#">William Viteritti</a></h3>
+				<h3 id="avatar-nome1"><a href="#">Matteo Licciardino</a></h3>
 				<p id="avatar-ruolo1">Hardware Assistant</p>
 			  </div>
 			  <p id="avatar-desc1">Calmo, gentile e disponibile. Ti aiuterà a risolvere le tue problematiche HW.</p>
@@ -289,14 +289,14 @@
 		  <!-- Team Item Starts -->
 		  <div class="team-item wow fadeInRight" data-wow-delay="0.6s">
 			<div class="team-img">
-			  <img id="avatar-img2" class="img-fluid" src="img/team/avatar-quijada.png" alt="" width="143">
+			  <img id="avatar-img2" class="img-fluid" src="img/team/avatar-mastroianni.jpeg" alt="" width="143">
 			</div>
 			<div class="contetn">
 			  <div class="info-text">
-				<h3 id="avatar-nome2"><a href="#">Pierpaolo Quijada</a></h3>
+				<h3 id="avatar-nome2"><a href="#">Alberto Mastroianni</a></h3>
 				<p id="avatar-ruolo2">Tutor</p>
 			  </div>
-			  <p id="avatar-desc2">Preparato ed Appassionato. E' pronto a soddisfare ogni tua esigenza</p>
+			  <p id="avatar-desc2">Preparato ed Appassionato. E' pronto a soddisfare ogni tua esigenza.</p>
 			  <ul class="social-icons">
 				<!-- <li><a href="#"><i class="lni-facebook-filled" aria-hidden="true"></i></a></li>
 				<li><a href="#"><i class="lni-twitter-filled" aria-hidden="true"></i></a></li> -->
@@ -310,11 +310,11 @@
 		  <!-- Team Item Starts -->
 		  <div class="team-item wow fadeInRight" data-wow-delay="0.8s">
 			<div class="team-img">
-			  <img id="avatar-img3" class="img-fluid" src="img/team/avatar-garabello.png" alt="" width="143">
+			  <img id="avatar-img3" class="img-fluid" src="img/team/avatar-canale.jpeg" alt="" width="143">
 			</div>
 			<div class="contetn">
 			  <div class="info-text">
-				<h3 id="avatar-nome3"><a href="#">Marco Garabello</a></h3>
+				<h3 id="avatar-nome3"><a href="#">Andrea Canale</a></h3>
 				<p id="avatar-ruolo3">Software Assistant</p>
 			  </div>
 			  <p id="avatar-desc3">Sempre disponibile per aiutare o chiarire qualunque dubbio nel mondo del software.</p>
