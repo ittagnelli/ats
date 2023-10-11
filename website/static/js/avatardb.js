@@ -17,7 +17,7 @@ var avatardb = [
 		desc: 'Un ragazzo molto sorridente che sarà lieto di accogliervi in negozio per risolvere i vostri problemi'
 	},
 	{
-		img: 'img/team/avatar-cellini.jpeg',
+		img: 'img/team/avatar-cellini.jpg',
 		nome: 'Marco Cellini',
 		ruolo: 'Tutor',
 		desc: "Non sai nulla? Anch'io ero come te, adesso se ti serve una mano basta chiedere."
@@ -29,7 +29,7 @@ var avatardb = [
 		desc: 'Appassionato di programmazione, hardware troubleshooting e grafica. Saprà certamente aiutarti!!'
 	},
 	{
-		img: 'img/team/avatar-mastroianni.jpeg',
+		img: 'img/team/avatar-mastroianni.jpg',
 		nome: 'Alberto Mastroianni',
 		ruolo: 'Software Assistant',
 		desc: 'Sempre disponibile per aiutare o chiarire qualunque dubbio nel mondo del software.'
@@ -41,13 +41,13 @@ var avatardb = [
 		desc: 'Abile smanettone, capace e affidabile.'
 	},
 	{
-		img: 'img/team/avatar-furina.jpeg',
+		img: 'img/team/avatar-furina.jpg',
 		nome: 'Emanuele Furina',
 		ruolo: 'Hardware Assistant',
 		desc: 'Il computer? Lo conosco come le mie tasche!'
 	},
 	{
-		img: 'img/team/avatar-mari.jpg',
+		img: 'img/team/avatar-mari.png',
 		nome: 'Gioele Mari',
 		ruolo: 'Hardware Assistant',
 		desc: 'Il computer? Lo conosco come le mie tasche!'
@@ -59,7 +59,7 @@ var avatardb = [
 		desc: "Preparato ed Appassionato. E' pronto a soddisfare ogni tua esigenza"
 	},
 	{
-		img: 'img/team/avatar-mariotti.jpeg',
+		img: 'img/team/avatar-mariotti.jpg',
 		nome: 'Matteo Mariotti',
 		ruolo: 'Software Assistant',
 		desc: 'Matteo è come te, pieno di domande. Ora però sarà pronto a darti una risposta!'
@@ -71,7 +71,7 @@ var avatardb = [
 		desc: 'Hai un problema col computer? Sebastiano saprà aiutarti a trovare la soluzione'
 	},
 	{
-		img: 'img/team/avatar-widson.jpeg',
+		img: 'img/team/avatar-widson.jpg',
 		nome: 'Okoro Wisdom',
 		ruolo: 'Hardware Assistant',
 		desc: 'Ci mette passione nel trovare la soluzione!'
