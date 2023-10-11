@@ -4,7 +4,6 @@
 	$(window).on('load', function () {
 		/*Conta gli accessi ad ATS
     ========================================================*/
-		log_access('home');
 		/*Seleziona e visualizza i 4 avatar di ATS team
     ========================================================*/
 		get_4_students().forEach((studente, indice) => {

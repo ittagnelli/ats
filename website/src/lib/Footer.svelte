@@ -66,7 +66,7 @@
 		  <div class="col-md-12">
 			<div class="copyright-content">
 			  <!-- <p>Copyright © 2021 <a rel="nofollow" href="https://uideck.com">ATS</a> All Right Reserved</p> -->
-			  <p>Developed by <b>ATS&#8482;</b> 2021 - v2.0.1</p>
+			  <p>Developed by <b>ATS&#8482;</b> 2021 - 2023 - v2.0.2</p>
 			</div>
 		  </div>
 		</div>

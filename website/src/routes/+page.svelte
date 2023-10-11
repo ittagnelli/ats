@@ -1,5 +1,74 @@
 <script context="module">
+	import { log_access } from "$lib/js/firebase";
+	import Servizi from '$lib/components/servizi/servizi.svelte';
+
 	export const prerender = true;
+
+	let name, email, msg_subject, msg_service, message;
+
+	function sendEmail(){
+
+    console.log(name);
+    console.log(email);
+    console.log(msg_subject);
+    console.log(msg_service);
+    console.log(message);
+   
+    const email_body = `
+        <table border="1">
+        <tr>
+            <td><h2>Richiesta da:</h2></td>
+            <td><h2>#nome</h2></td>
+        </tr>
+        <tr>
+            <td><h2>Email:</h2></td>
+            <td><h2>#email</h2></td>
+        </tr>
+        <tr>
+            <td><h2>Servizio:</h2></td>
+            <td><h2>#servizio</h2></td>
+        </tr>
+        <tr>
+            <td><h2>Oggetto:</h2></td>
+            <td><h2>#oggetto</h2></td>
+        </tr>
+        <tr>
+            <td><h2>Richiesta:</h2></td>
+            <td><h2><pre>#richiesta</pre></h2></td>
+        </tr>
+    </table>`
+    .replace("#nome", name)
+    .replace("#email", email)
+    .replace("#servizio", msg_service)
+    .replace("#oggetto", msg_subject)
+    .replace("#richiesta", message);
+    
+    console.log(email_body);
+    if(message == '' || name == '' || email == '' || msg_subject == '' || msg_service == null){
+        alert("Per favore compilare tutti i campi per proceedre con l'invio!!!");
+        console.log("Errore: non tutti i campi sono stati compilati");
+    }
+    else{
+        Email.send({
+            SecureToken : '0dbd587a-5b00-4cca-b1ef-8d25e73fda99',
+            To : 'ats@istitutoagnelli.it',
+            From : 'ats@istitutoagnelli.it',
+            Subject : msg_subject,
+            Body : email_body
+        }).then(
+            (_) => {
+                log_access("email");
+                alert("Messaggio inviato con successo! Grazie");
+                console.log("Messaggio inviato con successo!");
+				name = "";
+				email = "";
+				msg_subject = "";
+				msg_service = "";
+				message = "";
+            }   
+        ); 
+    }
+}
 </script>
 
 <svelte:head>
@@ -35,97 +104,18 @@
   </div>
   <!-- Hero Area End -->
 
-   <!-- Services Section Start -->
-   <section id="services" class="section-padding">
-	<div class="container">
-	  <div class="section-header text-center">
-		<h2 class="section-title wow fadeInDown" data-wow-delay="0.3s">I Nostri Servizi</h2>
-		<div class="shape wow fadeInDown" data-wow-delay="0.3s"></div>
-	  </div>
-	  <div class="row">
-		<!-- Services item -->
-		<div class="col-md-6 col-lg-4 col-xs-12">
-		  <div class="services-item wow fadeInRight" data-wow-delay="0.3s">
-			<div class="icon">
-			  <i class="lni-cog"></i>
+  	<section id="services" class="section-padding">
+		<div class="container">
+			<div class="section-header text-center">
+				<h2 class="section-title wow fadeInDown" data-wow-delay="0.3s">I Nostri Servizi</h2>
+				<div class="shape wow fadeInDown" data-wow-delay="0.3s"></div>
 			</div>
-			<div class="services-content">
-			  <h3><a href="/about">Riparazione Computer</a></h3>
-			  <p>PC o Laptop guasto? Nessun problema! <br />ATS Team è qua per te! Risolviamo qualsiasi tipo di problematica sia Software che Hardware. <br /><br /></p>
+			<div class="row">
+				<Servizi />
+
 			</div>
-		  </div>
 		</div>
-		<!-- Services item -->
-		<div class="col-md-6 col-lg-4 col-xs-12">
-		  <div class="services-item wow fadeInRight" data-wow-delay="0.6s">
-			<div class="icon">
-			  <i class="lni-stats-up"></i>
-			</div>
-			<div class="services-content">
-			  <h3><a href="#">Rinnovo PC-Laptop</a></h3>
-			  <p>Il Laptop è datato e lento? Non preoccuparti!  Abbiamo varie soluzioni per "rivitalizzare" il tuo PC aumentandone le prestazioni senza doverlo sostituire. </p>
-			</div>
-		  </div>
-		</div>
-		<!-- Services item -->
-		<div class="col-md-6 col-lg-4 col-xs-12">
-		  <div class="services-item wow fadeInRight" data-wow-delay="0.9s">
-			<div class="icon">
-			  <i class="lni-users"></i>
-			</div>
-			<div class="services-content">
-			  <h3><a href="#">Assistenza Informatica</a></h3>
-			  <p>Stai riscontrando problemi, di qualsiasi natura, con il tuo telefono o computer? <br /> Siamo qui per supportarti e aiutarti a risolvere tutti i tuoi problemi.<br /><br /> </p>
-			</div>
-		  </div>
-		</div>
-		<!-- Services item -->
-		<div class="col-md-6 col-lg-4 col-xs-12">
-		  <div class="services-item wow fadeInRight" data-wow-delay="1.2s">
-			<div class="icon">
-			  <i class="lni-layers"></i>
-			</div>
-			<div class="services-content">
-			  <h3><a href="#">Installazione Linux</a></h3>
-			  <p>Vuoi provare l'ebrezza di Linux ma non ti senti sicuro? Passa a trovarci, possiamo installare Linux in varie modalità permettendoti di sperimentare in sicurezza.</p>
-			</div>
-		  </div>
-		</div>
-		<!-- Services item -->
-		<div class="col-md-6 col-lg-4 col-xs-12">
-		  <div class="services-item wow fadeInRight" data-wow-delay="1.5s">
-			<div class="icon">
-			  <i class="lni-mobile"></i>
-			</div>
-			<div class="services-content">
-			  <h3><a href="#">App Development</a></h3>
-			  <p>Hai in mente un sito o un app ma non puoi svilupparla? ATS ti aiuta a sviluppare siti web, applicazioni mobili e qualsiasi idea innovativa tu abbia.<br /><br /></p>
-			</div>
-		  </div>
-		</div>
-		<!-- Services item -->
-		<div class="col-md-6 col-lg-4 col-xs-12">
-		  <div class="services-item wow fadeInRight" data-wow-delay="1.8s">
-			<div class="icon">
-			  <i class="lni-rocket"></i>
-			</div>
-			<div class="services-content">
-			  <h3><a href="#">Supporto Didattico</a></h3>
-			  <!-- <p>Non hai capito cos'è l'entropia di un messaggio? Fai fatica a capire alcuni concetti/argomenti? Non preoccuparti ci siamo passati anche noi. Possiamo aiutarti a studiare e a preparati per le verifiche.</p> -->
-			  <p>Non hai capito cos'è l'entropia di un messaggio? Fai fatica a capire alcuni argomenti? Non preoccuparti ci siamo passati anche noi. Possiamo aiutarti a studiare e a preparati per le verifiche.</p>
-			</div>
-		  </div>
-		</div>
-	  </div>
-	  <div class="row">
-		<div class="col-md-12 col-lg-12 col-xs-12 ats_price">
-			<br />
-			I servizi offerti da ATS hanno un costo minimo di 5 Euro. Il prezzo finale sarà stabilito insieme ai nostri tecnici al momento del preventivo.
-		</div>
-	  </div>
-	</div>
-  </section>
-  <!-- Services Section End -->
+	</section>
 
   <!-- About Section start -->
   <!-- <div class="about-area section-padding bg-gray">
@@ -572,7 +562,7 @@
 					<div class="help-block with-errors"></div>
 				  </div>
 				  <div class="submit-button text-left">
-					<button class="btn btn-common" id="form-submit" type="submit" onclick="sendEmail()">Invia Richiesta</button>
+					<button class="btn btn-common" id="form-submit" type="submit" on:click={sendEmail}>Invia Richiesta</button>
 					<div id="msgSubmit" class="h3 text-center hidden"></div> 
 					<div class="clearfix"></div> 
 				  </div>
