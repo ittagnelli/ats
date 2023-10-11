@@ -9,7 +9,7 @@
 				<i class={servizio.icon} />
 			</div>
 			<div class="services-content">
-				<h3><a href="/about">{servizio.nome}</a></h3>
+				<h3><a href="#">{servizio.nome}</a></h3>
 				<p>
 					{@html servizio.descrizione}
 				</p>
