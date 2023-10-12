@@ -1,4 +1,4 @@
-var MAX_STUDENTS = 11;
+var MAX_STUDENTS = 12;
 
 function get_4_students() {
 	student = new Set();
@@ -17,31 +17,31 @@ var avatardb = [
 		desc: 'Un ragazzo molto sorridente che sarà lieto di accogliervi in negozio per risolvere i vostri problemi'
 	},
 	{
-		img: 'img/team/avatar-cellini.jpg',
+		img: 'img/team/avatar-cellini.png',
 		nome: 'Marco Cellini',
 		ruolo: 'Tutor',
 		desc: "Non sai nulla? Anch'io ero come te, adesso se ti serve una mano basta chiedere."
 	},
 	{
-		img: 'img/team/avatar-licciardino.jpg',
+		img: 'img/team/avatar-licciardino.png',
 		nome: 'Matteo Licciardino',
 		ruolo: 'Software Assistant',
 		desc: 'Appassionato di programmazione, hardware troubleshooting e grafica. Saprà certamente aiutarti!!'
 	},
 	{
-		img: 'img/team/avatar-mastroianni.jpg',
+		img: 'img/team/avatar-mastroianni.png',
 		nome: 'Alberto Mastroianni',
 		ruolo: 'Software Assistant',
 		desc: 'Sempre disponibile per aiutare o chiarire qualunque dubbio nel mondo del software.'
 	},
 	{
-		img: 'img/team/avatar-canale.jpeg',
+		img: 'img/team/avatar-canale.png',
 		nome: 'Andrea Canale',
 		ruolo: 'Hardware Assistant',
 		desc: 'Abile smanettone, capace e affidabile.'
 	},
 	{
-		img: 'img/team/avatar-furina.jpg',
+		img: 'img/team/avatar-furina.png',
 		nome: 'Emanuele Furina',
 		ruolo: 'Hardware Assistant',
 		desc: 'Il computer? Lo conosco come le mie tasche!'
@@ -53,37 +53,37 @@ var avatardb = [
 		desc: 'Il computer? Lo conosco come le mie tasche!'
 	},
 	{
-		img: 'img/team/avatar-salvatore.jpg',
+		img: 'img/team/avatar-salvatore.png',
 		nome: 'Samuel Salvatore',
 		ruolo: 'Tutor',
 		desc: "Preparato ed Appassionato. E' pronto a soddisfare ogni tua esigenza"
 	},
 	{
-		img: 'img/team/avatar-mariotti.jpg',
+		img: 'img/team/avatar-mariotti.png',
 		nome: 'Matteo Mariotti',
 		ruolo: 'Software Assistant',
 		desc: 'Matteo è come te, pieno di domande. Ora però sarà pronto a darti una risposta!'
 	},
 	{
-		img: 'img/team/avatar-peluso.jpg',
+		img: 'img/team/avatar-peluso.png',
 		nome: 'Sebastiano Peluso',
 		ruolo: 'Customer Support',
 		desc: 'Hai un problema col computer? Sebastiano saprà aiutarti a trovare la soluzione'
 	},
 	{
-		img: 'img/team/avatar-widson.jpg',
+		img: 'img/team/avatar-widson.png',
 		nome: 'Okoro Wisdom',
 		ruolo: 'Hardware Assistant',
 		desc: 'Ci mette passione nel trovare la soluzione!'
 	},
-
-	/*
 	{
-		img: 'img/team/avatar-sola.png',
-		nome: 'MATTEO SOLA',
+		img: 'img/team/avatar-villaorduna.jpg',
+		nome: 'Daniele Villaorduna',
 		ruolo: 'Hardware Assistant',
 		desc: 'Parla poco ma agisce molto. Vieni a conoscerlo, non te ne pentirai!'
 	},
+
+	/*
 	{
 		img: 'img/team/avatar-solavagione.png',
 		nome: 'MATTEO SOLAVAGIONE',

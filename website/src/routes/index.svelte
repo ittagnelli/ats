@@ -247,7 +247,7 @@
 		  <!-- Team Item Starts -->
 		  <div class="team-item wow fadeInRight" data-wow-delay="0.2s">
 			<div class="team-img">
-			  <img id="avatar-img0" class="img-fluid" src="img/team/avatar-cellini.jpg" alt="" width="143">
+			  <img id="avatar-img0" class="img-fluid" src="img/team/avatar-cellini.png" alt="" width="143">
 			</div>
 			<div class="contetn">
 			  <div class="info-text">
@@ -268,7 +268,7 @@
 		  <!-- Team Item Starts -->
 		  <div class="team-item wow fadeInRight" data-wow-delay="0.4s">
 			<div class="team-img">
-			  <img id="avatar-img1" class="img-fluid" src="img/team/avatar-licciardino.jpg" alt="" width="143">
+			  <img id="avatar-img1" class="img-fluid" src="img/team/avatar-licciardino.png" alt="" width="143">
 			</div>
 			<div class="contetn">
 			  <div class="info-text">
@@ -289,7 +289,7 @@
 		  <!-- Team Item Starts -->
 		  <div class="team-item wow fadeInRight" data-wow-delay="0.6s">
 			<div class="team-img">
-			  <img id="avatar-img2" class="img-fluid" src="img/team/avatar-mastroianni.jpg" alt="" width="143">
+			  <img id="avatar-img2" class="img-fluid" src="img/team/avatar-mastroianni.png" alt="" width="143">
 			</div>
 			<div class="contetn">
 			  <div class="info-text">
@@ -310,7 +310,7 @@
 		  <!-- Team Item Starts -->
 		  <div class="team-item wow fadeInRight" data-wow-delay="0.8s">
 			<div class="team-img">
-			  <img id="avatar-img3" class="img-fluid" src="img/team/avatar-canale.jpeg" alt="" width="143">
+			  <img id="avatar-img3" class="img-fluid" src="img/team/avatar-canale.png" alt="" width="143">
 			</div>
 			<div class="contetn">
 			  <div class="info-text">
