@@ -4,71 +4,6 @@
 
 	export const prerender = true;
 
-	let name, email, msg_subject, msg_service, message;
-
-	function sendEmail(){
-
-    console.log(name);
-    console.log(email);
-    console.log(msg_subject);
-    console.log(msg_service);
-    console.log(message);
-   
-    const email_body = `
-        <table border="1">
-        <tr>
-            <td><h2>Richiesta da:</h2></td>
-            <td><h2>#nome</h2></td>
-        </tr>
-        <tr>
-            <td><h2>Email:</h2></td>
-            <td><h2>#email</h2></td>
-        </tr>
-        <tr>
-            <td><h2>Servizio:</h2></td>
-            <td><h2>#servizio</h2></td>
-        </tr>
-        <tr>
-            <td><h2>Oggetto:</h2></td>
-            <td><h2>#oggetto</h2></td>
-        </tr>
-        <tr>
-            <td><h2>Richiesta:</h2></td>
-            <td><h2><pre>#richiesta</pre></h2></td>
-        </tr>
-    </table>`
-    .replace("#nome", name)
-    .replace("#email", email)
-    .replace("#servizio", msg_service)
-    .replace("#oggetto", msg_subject)
-    .replace("#richiesta", message);
-    
-    console.log(email_body);
-    if(message == '' || name == '' || email == '' || msg_subject == '' || msg_service == null){
-        alert("Per favore compilare tutti i campi per proceedre con l'invio!!!");
-        console.log("Errore: non tutti i campi sono stati compilati");
-    }
-    else{
-        Email.send({
-            SecureToken : '0dbd587a-5b00-4cca-b1ef-8d25e73fda99',
-            To : 'ats@istitutoagnelli.it',
-            From : 'ats@istitutoagnelli.it',
-            Subject : msg_subject,
-            Body : email_body
-        }).then(
-            (_) => {
-                log_access("email");
-                alert("Messaggio inviato con successo! Grazie");
-                console.log("Messaggio inviato con successo!");
-				name = "";
-				email = "";
-				msg_subject = "";
-				msg_service = "";
-				message = "";
-            }   
-        ); 
-    }
-}
 </script>
 
 <svelte:head>
@@ -522,53 +457,40 @@
 	  <div class="row contact-form-area wow fadeInUp" data-wow-delay="0.3s">   
 		<div class="col-lg-7 col-md-12 col-sm-12">
 		  <div class="contact-block">
-			<form id="contactForm">
-			  <div class="row">
-				<div class="col-md-6">
-				  <div class="form-group">
-					<input type="text" class="form-control" id="name" name="name" placeholder="Nome e Cognome" required data-error="Per favore inserisci Nome e Cognome">
-					<div class="help-block with-errors"></div>
-				  </div>                                 
-				</div>
-				<div class="col-md-6">
-				  <div class="form-group">
-					<input type="text" placeholder="Email" id="email" class="form-control" name="email" required data-error="Per favore inserisci il tuo mail">
-					<div class="help-block with-errors"></div>
-				  </div> 
-				</div>
-				 <div class="col-md-6">
-				  <div class="form-group">
-					<input type="text" placeholder="Oggetto" id="msg_subject" class="form-control" required data-error="Per favore inserisci l'oggetto della richiesta">
-					<div class="help-block with-errors"></div>
-				  </div>
-				</div>
-				<div class="col-md-6">
-				  <div class="form-group">
-					<select id="msg_service" class="form-control" required data-error="Per favore selezione il servizio desiderato">
-					  <option value="" disabled selected>Seleziona il servizio desiderato</option>
-					  <option value="srv1">Riparazione Computer</option>
-					  <option value="srv2">Rinnovo PC-Laptop</option>
-					  <option value="srv3">Assistenza Informatica</option>
-					  <option value="srv4">Installazione Linux</option>
-					  <option value="srv5">App Development</option>
-					  <option value="srv6">Supporto Didattico</option>
-					</select>
-					<div class="help-block with-errors"></div>
-				  </div>
-				</div>
-				<div class="col-md-12">
-				  <div class="form-group"> 
-					<textarea class="form-control" id="message" placeholder="Descrivi il tuo problema o la tua richiesta" rows="7" data-error="Per favore descrivi il tuo problema o richiesta" required></textarea>
-					<div class="help-block with-errors"></div>
-				  </div>
-				  <div class="submit-button text-left">
-					<button class="btn btn-common" id="form-submit" type="submit" on:click={sendEmail}>Invia Richiesta</button>
-					<div id="msgSubmit" class="h3 text-center hidden"></div> 
-					<div class="clearfix"></div> 
-				  </div>
-				</div>
-			  </div>            
-			</form>
+			<div class="form-container">
+				<h2>Richiesta di Assistenza Informatica</h2>
+				<form id="assistenzaForm">
+					<div class="form-group">
+						<label for="from_name">Nome e Cognome:</label>
+						<input type="text" id="from_name" name="from_name" required>
+					</div>
+					<div class="form-group">
+						<label for="email">Email:</label>
+						<input type="email" id="email" name="email" required>
+					</div>
+					<div class="form-group">
+						<label for="oggetto">Oggetto:</label>
+						<input type="text" id="oggetto" name="oggetto" required>
+					</div>
+					<div class="form-group">
+						<label for="servizio">Servizio Richiesto:</label>
+						<select id="servizio" name="servizio" required>
+							<option value="">Seleziona un servizio</option>
+							<option value="riparazione_computer">Riparazione Computer</option>
+							<option value="rinnovo_PC_laptop">Rinnovo PC-Laptop</option>
+							<option value="assistenza_informatica">Assistenza Informatica</option>
+							<option value="installazione_linux">Installazione Linux</option>
+							<option value="app_development">App Development</option>
+							<option value="supporto_didattico">Supporto Didattico</option>
+						</select>
+					</div>
+					<div class="form-group">
+						<label for="problema">Descrivi il Problema:</label>
+						<textarea id="problema" name="problema" required></textarea>
+					</div>
+					<button type="submit">Invia Richiesta</button>
+				</form>
+			</div>
 		  </div>
 		</div>
 		<div class="col-lg-5 col-md-12 col-xs-12">
