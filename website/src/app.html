@@ -3,6 +3,7 @@
 
 <head>
 	<meta charset="utf-8">
+	<link rel="icon" href="%sveltekit.assets%/favicon.svg" />
 	<meta name="author" content="Antonio Mancuso e 4INFO a.s. 2021-2022" />
 	<meta name="description" content="Agnelli Tech Shop" />
 	<meta name="keywords" content="tech, shop, computer, informatica, html, lezioni, scuola" />
@@ -24,11 +25,13 @@
 	<!-- Responsive Style -->
 	<link rel="stylesheet" href="css/responsive.css">
 
-	%svelte.head%
+	<link rel="stylesheet" href="css/form.css">
+
+	%sveltekit.head%
 </head>
 
-<body>
-	<div id="svelte">%svelte.body%</div>
+<body data-sveltekit-preload-data="hover">
+	<div style="display: contents">%sveltekit.body%</div>
 
 	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
 	<script src="js/jquery-min.js"></script>
@@ -40,13 +43,20 @@
 	<script src="js/scrolling-nav.js"></script>
 	<script src="js/jquery.easing.min.js"></script>
 	<script src="js/avatardb.js"></script>
-	<script src="js/firebase-app.js"></script>
-	<script src="js/firebase-firestore.js"></script>
-	<script src="js/logaccess.js"></script>
 	<script src="js/main.js"></script>
 	<script src="js/form-validator.min.js"></script>
 	<script src="js/contact-form-script.min.js"></script>
 	<script src="https://smtpjs.com/v3/smtp.js"></script>
+
+
+	<script type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+<script type="text/javascript">
+  emailjs.init('0dYmP6olVTA2_hgJT')
+</script>\	
+
+
 </body>
 
 </html>

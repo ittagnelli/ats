@@ -24,13 +24,13 @@
 			<div class="collapse navbar-collapse" id="navbarCollapse">
 				<ul class="navbar-nav mr-auto w-100 justify-content-end clearfix">
 					<li class="nav-item active">
-						<a class="nav-link" sveltekit:prefetch href="/"> Home </a>
+						<a class="nav-link"  href="/"> Home </a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" sveltekit:prefetch href="#services"> Servizi </a>
+						<a class="nav-link"  href="#services"> Servizi </a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" sveltekit:prefetch href="#team"> Team </a>
+						<a class="nav-link"  href="#team"> Team </a>
 					</li>
 					<!-- <li class="nav-item">
 			  <a class="nav-link" href="#pricing">
@@ -39,7 +39,7 @@
 			</li> -->
 					<li class="nav-item hide" />
 					<li class="nav-item">
-						<a class="nav-link" sveltekit:prefetch href="#contact"> Contatti </a>
+						<a class="nav-link"  href="#contact"> Contatti </a>
 					</li>
 				</ul>
 			</div>

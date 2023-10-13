@@ -1,0 +1,48 @@
+ 
+
+.form-container {
+    border: 1px solid red;
+    background-color: #f9f9f9;
+    padding: 7%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0);
+}
+
+.form-group {
+    margin-bottom: 15px;
+    display: inline-block; /* Aggiunto per posizionare i campi affianco */
+    width: 45%; /* Imposta la larghezza al 45% per far entrare due campi affianco */
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea,
+select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    vertical-align: 60%;
+    margin-left: 6em;
+}
+
+button:hover {
+    background-color: #500000;
+}

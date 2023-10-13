@@ -1,5 +1,9 @@
 <script context="module">
+	import { log_access } from "$lib/js/firebase";
+	import Servizi from '$lib/components/servizi/servizi.svelte';
+
 	export const prerender = true;
+
 </script>
 
 <svelte:head>
@@ -35,97 +39,18 @@
   </div>
   <!-- Hero Area End -->
 
-   <!-- Services Section Start -->
-   <section id="services" class="section-padding">
-	<div class="container">
-	  <div class="section-header text-center">
-		<h2 class="section-title wow fadeInDown" data-wow-delay="0.3s">I Nostri Servizi</h2>
-		<div class="shape wow fadeInDown" data-wow-delay="0.3s"></div>
-	  </div>
-	  <div class="row">
-		<!-- Services item -->
-		<div class="col-md-6 col-lg-4 col-xs-12">
-		  <div class="services-item wow fadeInRight" data-wow-delay="0.3s">
-			<div class="icon">
-			  <i class="lni-cog"></i>
+  	<section id="services" class="section-padding">
+		<div class="container">
+			<div class="section-header text-center">
+				<h2 class="section-title wow fadeInDown" data-wow-delay="0.3s">I Nostri Servizi</h2>
+				<div class="shape wow fadeInDown" data-wow-delay="0.3s"></div>
 			</div>
-			<div class="services-content">
-			  <h3><a href="/about">Riparazione Computer</a></h3>
-			  <p>PC o Laptop guasto? Nessun problema! <br />ATS Team è qua per te! Risolviamo qualsiasi tipo di problematica sia Software che Hardware. <br /><br /></p>
+			<div class="row">
+				<Servizi />
+
 			</div>
-		  </div>
 		</div>
-		<!-- Services item -->
-		<div class="col-md-6 col-lg-4 col-xs-12">
-		  <div class="services-item wow fadeInRight" data-wow-delay="0.6s">
-			<div class="icon">
-			  <i class="lni-stats-up"></i>
-			</div>
-			<div class="services-content">
-			  <h3><a href="#">Rinnovo PC-Laptop</a></h3>
-			  <p>Il Laptop è datato e lento? Non preoccuparti!  Abbiamo varie soluzioni per "rivitalizzare" il tuo PC aumentandone le prestazioni senza doverlo sostituire. </p>
-			</div>
-		  </div>
-		</div>
-		<!-- Services item -->
-		<div class="col-md-6 col-lg-4 col-xs-12">
-		  <div class="services-item wow fadeInRight" data-wow-delay="0.9s">
-			<div class="icon">
-			  <i class="lni-users"></i>
-			</div>
-			<div class="services-content">
-			  <h3><a href="#">Assistenza Informatica</a></h3>
-			  <p>Stai riscontrando problemi, di qualsiasi natura, con il tuo telefono o computer? <br /> Siamo qui per supportarti e aiutarti a risolvere tutti i tuoi problemi.<br /><br /> </p>
-			</div>
-		  </div>
-		</div>
-		<!-- Services item -->
-		<div class="col-md-6 col-lg-4 col-xs-12">
-		  <div class="services-item wow fadeInRight" data-wow-delay="1.2s">
-			<div class="icon">
-			  <i class="lni-layers"></i>
-			</div>
-			<div class="services-content">
-			  <h3><a href="#">Installazione Linux</a></h3>
-			  <p>Vuoi provare l'ebrezza di Linux ma non ti senti sicuro? Passa a trovarci, possiamo installare Linux in varie modalità permettendoti di sperimentare in sicurezza.</p>
-			</div>
-		  </div>
-		</div>
-		<!-- Services item -->
-		<div class="col-md-6 col-lg-4 col-xs-12">
-		  <div class="services-item wow fadeInRight" data-wow-delay="1.5s">
-			<div class="icon">
-			  <i class="lni-mobile"></i>
-			</div>
-			<div class="services-content">
-			  <h3><a href="#">App Development</a></h3>
-			  <p>Hai in mente un sito o un app ma non puoi svilupparla? ATS ti aiuta a sviluppare siti web, applicazioni mobili e qualsiasi idea innovativa tu abbia.<br /><br /></p>
-			</div>
-		  </div>
-		</div>
-		<!-- Services item -->
-		<div class="col-md-6 col-lg-4 col-xs-12">
-		  <div class="services-item wow fadeInRight" data-wow-delay="1.8s">
-			<div class="icon">
-			  <i class="lni-rocket"></i>
-			</div>
-			<div class="services-content">
-			  <h3><a href="#">Supporto Didattico</a></h3>
-			  <!-- <p>Non hai capito cos'è l'entropia di un messaggio? Fai fatica a capire alcuni concetti/argomenti? Non preoccuparti ci siamo passati anche noi. Possiamo aiutarti a studiare e a preparati per le verifiche.</p> -->
-			  <p>Non hai capito cos'è l'entropia di un messaggio? Fai fatica a capire alcuni argomenti? Non preoccuparti ci siamo passati anche noi. Possiamo aiutarti a studiare e a preparati per le verifiche.</p>
-			</div>
-		  </div>
-		</div>
-	  </div>
-	  <div class="row">
-		<div class="col-md-12 col-lg-12 col-xs-12 ats_price">
-			<br />
-			I servizi offerti da ATS hanno un costo minimo di 5 Euro. Il prezzo finale sarà stabilito insieme ai nostri tecnici al momento del preventivo.
-		</div>
-	  </div>
-	</div>
-  </section>
-  <!-- Services Section End -->
+	</section>
 
   <!-- About Section start -->
   <!-- <div class="about-area section-padding bg-gray">
@@ -532,53 +457,40 @@
 	  <div class="row contact-form-area wow fadeInUp" data-wow-delay="0.3s">   
 		<div class="col-lg-7 col-md-12 col-sm-12">
 		  <div class="contact-block">
-			<form id="contactForm">
-			  <div class="row">
-				<div class="col-md-6">
-				  <div class="form-group">
-					<input type="text" class="form-control" id="name" name="name" placeholder="Nome e Cognome" required data-error="Per favore inserisci Nome e Cognome">
-					<div class="help-block with-errors"></div>
-				  </div>                                 
-				</div>
-				<div class="col-md-6">
-				  <div class="form-group">
-					<input type="text" placeholder="Email" id="email" class="form-control" name="email" required data-error="Per favore inserisci il tuo mail">
-					<div class="help-block with-errors"></div>
-				  </div> 
-				</div>
-				 <div class="col-md-6">
-				  <div class="form-group">
-					<input type="text" placeholder="Oggetto" id="msg_subject" class="form-control" required data-error="Per favore inserisci l'oggetto della richiesta">
-					<div class="help-block with-errors"></div>
-				  </div>
-				</div>
-				<div class="col-md-6">
-				  <div class="form-group">
-					<select id="msg_service" class="form-control" required data-error="Per favore selezione il servizio desiderato">
-					  <option value="" disabled selected>Seleziona il servizio desiderato</option>
-					  <option value="srv1">Riparazione Computer</option>
-					  <option value="srv2">Rinnovo PC-Laptop</option>
-					  <option value="srv3">Assistenza Informatica</option>
-					  <option value="srv4">Installazione Linux</option>
-					  <option value="srv5">App Development</option>
-					  <option value="srv6">Supporto Didattico</option>
-					</select>
-					<div class="help-block with-errors"></div>
-				  </div>
-				</div>
-				<div class="col-md-12">
-				  <div class="form-group"> 
-					<textarea class="form-control" id="message" placeholder="Descrivi il tuo problema o la tua richiesta" rows="7" data-error="Per favore descrivi il tuo problema o richiesta" required></textarea>
-					<div class="help-block with-errors"></div>
-				  </div>
-				  <div class="submit-button text-left">
-					<button class="btn btn-common" id="form-submit" type="submit" onclick="sendEmail()">Invia Richiesta</button>
-					<div id="msgSubmit" class="h3 text-center hidden"></div> 
-					<div class="clearfix"></div> 
-				  </div>
-				</div>
-			  </div>            
-			</form>
+			<div class="form-container">
+				<h2>Richiesta di Assistenza Informatica</h2>
+				<form id="assistenzaForm">
+					<div class="form-group">
+						<label for="from_name">Nome e Cognome:</label>
+						<input type="text" id="from_name" name="from_name" required>
+					</div>
+					<div class="form-group">
+						<label for="email">Email:</label>
+						<input type="email" id="email" name="email" required>
+					</div>
+					<div class="form-group">
+						<label for="oggetto">Oggetto:</label>
+						<input type="text" id="oggetto" name="oggetto" required>
+					</div>
+					<div class="form-group">
+						<label for="servizio">Servizio Richiesto:</label>
+						<select id="servizio" name="servizio" required>
+							<option value="">Seleziona un servizio</option>
+							<option value="riparazione_computer">Riparazione Computer</option>
+							<option value="rinnovo_PC_laptop">Rinnovo PC-Laptop</option>
+							<option value="assistenza_informatica">Assistenza Informatica</option>
+							<option value="installazione_linux">Installazione Linux</option>
+							<option value="app_development">App Development</option>
+							<option value="supporto_didattico">Supporto Didattico</option>
+						</select>
+					</div>
+					<div class="form-group">
+						<label for="problema">Descrivi il Problema:</label>
+						<textarea id="problema" name="problema" required></textarea>
+					</div>
+					<button type="submit">Invia Richiesta</button>
+				</form>
+			</div>
 		  </div>
 		</div>
 		<div class="col-lg-5 col-md-12 col-xs-12">
