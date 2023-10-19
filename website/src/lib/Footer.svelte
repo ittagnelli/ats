@@ -45,15 +45,15 @@
 			<h3 class="footer-titel">Contatti</h3>
 			<ul class="address">
 			  <li>
-				<a href="#"><i class="lni-map-marker"></i> Corso Unione Sovietica 312 (TO) <br> c/o Laboratorio Informatica</a>
+				<a href="https://maps.app.goo.gl/QXDMQm3Lg44Yz3af8" target="_blank"><i class="lni-map-marker"></i> Corso Unione Sovietica 312 (TO)</a>
 			  </li>
 			  <li>
 				<!-- <a href="#"><i class="lni-phone-handset"></i> P: +555 543 3544</a> -->
-				<a class="instagram" href="https://www.instagram.com/agnelli.tech.shop/"><i class="lni-instagram"></i>agnelli.tech.shop</a>
+				<a class="instagram" href="https://www.instagram.com/agnellitechshop/" target="_blank"><i class="lni-instagram"></i>AgnelliTechShop</a>
 
 			  </li>
 			  <li>
-				<a href="mailto:ats@istitutoagnelli.it"><i class="lni-envelope"></i> E: ats@istitutoagnelli.it</a>
+				<a href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&to=ats@istitutoagnelli.it" target="_blank"><i class="lni-envelope"></i>ats@istitutoagnelli.it</a>
 			  </li>
 			</ul>
 		  </div>
