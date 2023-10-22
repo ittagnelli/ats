@@ -495,7 +495,7 @@
 		</div>
 		<div class="col-lg-5 col-md-12 col-xs-12">
 		  <div class="map">
-			<object style="border:0; height: 280px; width: 100%;" data="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2819.6577865807726!2d7.642479515916548!3d45.031871979098206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478812d8f5b94a11%3A0x10ba7aca867a6c6e!2sCorso%20Unione%20Sovietica%2C%20312%2C%2010135%20Torino%20TO!5e0!3m2!1sit!2sit!4v1629557139045!5m2!1sit!2sit"></object>
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22549.16458946682!2d7.645936367859131!3d45.05241371667153!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478812d8708bb3f5%3A0x7084968b35b2a5f!2sCorso%20Unione%20Sovietica%2C%20312%2C%2010135%20Torino%20TO!5e0!3m2!1sit!2sit!4v1697745687695!5m2!1sit!2sit" width="650" height="420" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 		  </div>
 		</div>
 	  </div>

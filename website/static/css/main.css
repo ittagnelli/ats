@@ -251,6 +251,7 @@ a.back-to-top {
   bottom: 18px;
   right: 15px;
   text-decoration: none;
+  z-index: 1000;
 }
 
 a.back-to-top i {
